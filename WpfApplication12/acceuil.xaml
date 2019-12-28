@@ -1,0 +1,62 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication12"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+        x:Class="WpfApplication12.acceuil" WindowState="Maximized"
+        mc:Ignorable="d"
+        Title="acceuil" Height="620" Width="1200">
+    <Grid Background="White">
+
+        <xctk:DockPanel HorizontalAlignment="Left" Height="662" Margin="-3,60,0,-132" VerticalAlignment="Top" Width="194" Background="#FF1A3C42">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
+        </xctk:DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="57" LastChildFill="False" VerticalAlignment="Top" Width="1480" Background="White" Margin="-6,-4,-282,0">
+            <DockPanel.Effect>
+                <DropShadowEffect ShadowDepth="3" Opacity="0.6"/>
+            </DockPanel.Effect>
+            <StackPanel Height="45" VerticalAlignment="Bottom" Width="76" Margin="10,0,0,5">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="logo.png"/>
+                </StackPanel.Background>
+            </StackPanel>
+            <Menu x:Name="menu" HorizontalAlignment="Right" Height="50" Margin="1130,2,0,0" VerticalAlignment="Top" Width="57" Foreground="#FFE81D1D" Background="{x:Null}">
+                <Menu.Effect>
+                    <DropShadowEffect ShadowDepth="3" Opacity="0.6"/>
+                </Menu.Effect>
+                <MenuItem Name ="split"  Header="" Height="50" Width="57"/>
+            </Menu>
+            <xctk:MaterialButton x:Name="help"  Height="46" Margin="2,5,0,0" VerticalAlignment="Top" Width="49" ToolTip="aide en ligne" Click="help_Click">
+                <xctk:MaterialButton.Background>
+                    <ImageBrush ImageSource="help.png"/>
+                </xctk:MaterialButton.Background>
+            </xctk:MaterialButton>
+            <xctk:MaterialButton x:Name="about" Width="49" Margin="0,0,0,7" ToolTip="à propos" Height="46" VerticalAlignment="Bottom" Click="about_Click">
+                <xctk:MaterialButton.Background>
+                    <ImageBrush ImageSource="about.png"/>
+                </xctk:MaterialButton.Background>
+            </xctk:MaterialButton>
+
+
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="58" LastChildFill="False" VerticalAlignment="Top" Width="193" Background="#FFFFA424" Margin="-2,56,0,0"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="45,58,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Height="46" Width="114" FontSize="36" Foreground="White" FontWeight="Bold"/>
+        <xctk:MaterialButton x:Name="materialButton" HorizontalAlignment="Left" Height="57" Margin="-3,129,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24">
+            <xctk:MaterialButton x:Name="planning" Content="planning" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="192" Background="#FF103A41" FontSize="24" Click="planning_Click"/>
+        </xctk:MaterialButton>
+        <xctk:MaterialButton x:Name="activities" Content="Activités" HorizontalAlignment="Left" Height="57" Margin="-3,186,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24" Click="activ_Click"/>
+        <xctk:MaterialButton x:Name="etat" Content="Etat des tâches" HorizontalAlignment="Left" Height="57" Margin="-3,244,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24" Click="etat_Click"/>
+        <xctk:MaterialButton x:Name="event" Content="Evénement" HorizontalAlignment="Left" Height="57" Margin="-3,302,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24" Click="event_Click"/>
+        <xctk:MaterialButton x:Name="docs" Content="Document" HorizontalAlignment="Left" Height="57" Margin="-3,360,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24" Click="docs_Click"/>
+        <xctk:MaterialButton x:Name="materialButton_Copy5" Content="Carnet d' @" HorizontalAlignment="Left" Height="57" Margin="-3,418,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24" Click="materialButton_Copy4_Click"/>
+        <xctk:MaterialButton x:Name="parameteres" Content="Paramètre" HorizontalAlignment="Left" Height="57" Margin="-3,476,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24" Click="parameter_Click"/>
+
+        <Frame x:Name="frame" Content="" HorizontalAlignment="Left" Margin="195,58,-197,5" Width="1194" Navigated="frame_Navigated" NavigationUIVisibility="Hidden"/>
+
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" Margin="-3,637,0,-133" VerticalAlignment="Top" Width="194" Background="#FF0E2E34"/>
+        <xctk:MaterialButton x:Name="diconect" Content="Se déconnecter" HorizontalAlignment="Left" Height="57" Margin="-3,533,0,0" VerticalAlignment="Top" Width="193" Background="#FF103A41" FontSize="24" Click="disconnect_Click"/>
+
+    </Grid>
+</Window>

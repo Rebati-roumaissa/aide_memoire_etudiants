@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="bdd" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\bin\Debug\bdd.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="WpfApplication12.Properties.Settings" SettingsPropertyName="bddConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Utilisateurs" Member="Utilisateurs">
+    <Type Name="Utilisateur">
+      <Column Name="Id_utilisateur" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mpasse" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Pseudo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Utilisateur_Activité" Member="Activités" ThisKey="Id_utilisateur" OtherKey="id_utilis" Type="Activité" />
+      <Association Name="Utilisateur_Tâche" Member="Tâches" ThisKey="Id_utilisateur" OtherKey="id_utilis" Type="Tâche" />
+      <Association Name="Utilisateur_Document" Member="Documents" ThisKey="Id_utilisateur" OtherKey="id_utilis" Type="Document" />
+      <Association Name="Utilisateur_Alerte" Member="Alertes" ThisKey="Id_utilisateur" OtherKey="id_utilis" Type="Alerte" />
+      <Association Name="Utilisateur_évènement" Member="évènements" ThisKey="Id_utilisateur" OtherKey="id_utilis" Type="évènement" />
+      <Association Name="Utilisateur_Contact" Member="Contacts" ThisKey="Id_utilisateur" OtherKey="Id_utilis" Type="Contact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Activité" Member="Activités">
+    <Type Name="Activité">
+      <Column Name="id_activité" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="designation" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_utilis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Activité_Tâche" Member="Tâches" ThisKey="id_activité" OtherKey="id_activ" Type="Tâche" />
+      <Association Name="Utilisateur_Activité" Member="Utilisateur" ThisKey="id_utilis" OtherKey="Id_utilisateur" Type="Utilisateur" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tâche" Member="Tâches">
+    <Type Name="Tâche">
+      <Column Name="Id_tache" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="designation" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="priorité" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="etat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="id_activ" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_utilis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tâche_Document" Member="Documents" ThisKey="Id_tache" OtherKey="id_tach" Type="Document" />
+      <Association Name="Tâche_Alerte" Member="Alertes" ThisKey="Id_tache" OtherKey="id_tach" Type="Alerte" />
+      <Association Name="Activité_Tâche" Member="Activité" ThisKey="id_activ" OtherKey="id_activité" Type="Activité" IsForeignKey="true" />
+      <Association Name="Utilisateur_Tâche" Member="Utilisateur" ThisKey="id_utilis" OtherKey="Id_utilisateur" Type="Utilisateur" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Document" Member="Documents">
+    <Type Name="Document">
+      <Column Name="Id_document" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="titre" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="emplacement" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="id_évèn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_tach" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_utilis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tâche_Document" Member="Tâche" ThisKey="id_tach" OtherKey="Id_tache" Type="Tâche" IsForeignKey="true" />
+      <Association Name="Utilisateur_Document" Member="Utilisateur" ThisKey="id_utilis" OtherKey="Id_utilisateur" Type="Utilisateur" IsForeignKey="true" />
+      <Association Name="évènement_Document" Member="évènement" ThisKey="id_évèn" OtherKey="Id_évènement" Type="évènement" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Alertes" Member="Alertes">
+    <Type Name="Alerte">
+      <Column Name="Id_alerte" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="temps" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="activer" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="id_évèn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_tach" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="son" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="id_utilis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tâche_Alerte" Member="Tâche" ThisKey="id_tach" OtherKey="Id_tache" Type="Tâche" IsForeignKey="true" />
+      <Association Name="Utilisateur_Alerte" Member="Utilisateur" ThisKey="id_utilis" OtherKey="Id_utilisateur" Type="Utilisateur" IsForeignKey="true" />
+      <Association Name="évènement_Alerte" Member="évènement" ThisKey="id_évèn" OtherKey="Id_évènement" Type="évènement" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.évènement" Member="évènements">
+    <Type Name="évènement">
+      <Column Name="Id_évènement" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="designation" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="lieu" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="id_utilis" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fin" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="évènement_Document" Member="Documents" ThisKey="Id_évènement" OtherKey="id_évèn" Type="Document" />
+      <Association Name="évènement_Alerte" Member="Alertes" ThisKey="Id_évènement" OtherKey="id_évèn" Type="Alerte" />
+      <Association Name="Utilisateur_évènement" Member="Utilisateur" ThisKey="id_utilis" OtherKey="Id_utilisateur" Type="Utilisateur" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contacts" Member="Contacts">
+    <Type Name="Contact">
+      <Column Name="Id_Contact" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Sweb" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Id_utilis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Utilisateur_Contact" Member="Utilisateur" ThisKey="Id_utilis" OtherKey="Id_utilisateur" Type="Utilisateur" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

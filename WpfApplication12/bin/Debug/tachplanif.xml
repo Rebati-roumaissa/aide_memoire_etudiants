@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-16"?>
+              <Task version = "1.2" xmlns = "http://schemas.microsoft.com/windows/2004/02/mit/task"  >
+                         <RegistrationInfo >
+                           <Date >2017-05-02T00:41:32</Date >     
+                           <Author > MAISONXP - PC\MAISON XP</Author >
+                           <Description >Il faut réussir</Description >              
+                                   </RegistrationInfo >
+                                    <Triggers >                     
+                                     <TimeTrigger >
+                                       <StartBoundary > 2017-05-02T00:44:03 </StartBoundary >
+                                               <Enabled > true </Enabled >
+                                             </TimeTrigger >
+                                           </Triggers >                              
+                                           <Principals >
+                                             <Principal>
+                                                     <LogonType > InteractiveToken </LogonType >
+                                                     <RunLevel > LeastPrivilege </RunLevel >
+                                                   </Principal >
+                                                 </Principals >
+                                                 <Settings >
+                                                   <MultipleInstancesPolicy > IgnoreNew </MultipleInstancesPolicy >
+                                                   <DisallowStartIfOnBatteries > false </DisallowStartIfOnBatteries >
+                                                   <StopIfGoingOnBatteries > false </StopIfGoingOnBatteries >
+                                                   <AllowHardTerminate > true </AllowHardTerminate >                                    
+                                                   <StartWhenAvailable > true </StartWhenAvailable >
+                                                   <RunOnlyIfNetworkAvailable > false </RunOnlyIfNetworkAvailable >
+                                                    <IdleSettings >                                  
+                                                     <StopOnIdleEnd > true </StopOnIdleEnd >                                    
+                                                     <RestartOnIdle > false </RestartOnIdle >                                    
+                                                   </IdleSettings >                                    
+                                                   <AllowStartOnDemand > true </AllowStartOnDemand >                                    
+                                                   <Enabled > true </Enabled >                                    
+                                                   <Hidden > false </Hidden >                                    
+                                                   <RunOnlyIfIdle > false </RunOnlyIfIdle >                                    
+                                                   <WakeToRun > true </WakeToRun >                                    
+                                                   <ExecutionTimeLimit > P1D </ExecutionTimeLimit >                                    
+                                                   <Priority > 7 </Priority >                                    
+                                                 </Settings >                                    
+                                                 <Actions Context = "Author" >                                     
+                                                    <Exec >                                     
+                                                      <Command > C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\bin\Debug\Affichage_alerte.exe</Command>                                        
+                                                         <Arguments >"ev1" "C:\Users\MAISON XP\Downloads\679.wav" "02/05/2017 03:40:00" "e"</Arguments>                                           
+                                                          </Exec >          
+                                                     </Actions >
+                                                      </Task > 

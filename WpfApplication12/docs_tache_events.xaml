@@ -1,0 +1,63 @@
+﻿<Page x:Class="WpfApplication12.docs_tache_events"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+     xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+      mc:Ignorable="d"
+      Title="list_taches" Height="900" Width="1194">
+
+    <Page.Resources>
+        <Style x:Key="ListStyle" TargetType="{x:Type ListBoxItem}">
+            <EventSetter Event="Control.MouseDoubleClick" Handler="HandleDoubleClick" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                        <Border x:Name="_Border"
+                                Padding="2"
+                                SnapsToDevicePixels="true">
+                            <ContentPresenter />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter TargetName="_Border" Property="Background" Value="#d3eef5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid Margin="-3,0,4,4" Background="#7a9d96">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="560*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="299*"/>
+            <RowDefinition Height="242*"/>
+        </Grid.RowDefinitions>
+        <xctk:MaterialButton x:Name="add_contact" HorizontalAlignment="Left" Height="38" Margin="43,3,0,0" VerticalAlignment="Top" Width="43" Click="add_Click" FontSize="22" FontWeight="Bold" Foreground="#FF1A3C42" BorderThickness="0" ToolTip="Ajouter un nouveau document">
+            <xctk:MaterialButton.Background>
+                <ImageBrush ImageSource="add_p.png"/>
+            </xctk:MaterialButton.Background>
+        </xctk:MaterialButton>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="78" Margin="1,47,0,0" VerticalAlignment="Top" Width="1173" Background="White" Grid.ColumnSpan="2">
+            <CheckBox x:Name="checkBox" Margin="20,13,0,48" Width="20" RenderTransformOrigin="0.571,0.952" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Margin="8,7,0,48" Foreground="#FF0E2E34" FontSize="18" Width="160"><Run Text="Sé"/><Run Text="l"/><Run Text="é"/><Run Text="ctionner tout "/></TextBlock>
+        </StackPanel>
+        <ListBox x:Name="list_box"  ItemContainerStyle="{DynamicResource ListStyle}" Height="625" Margin="1,91,19,0" VerticalAlignment="Top" Grid.RowSpan="2" RenderTransformOrigin="0.504,0.555" FontSize="18" BorderBrush="{x:Null}" Grid.ColumnSpan="2" SelectionChanged="list_box_SelectionChanged"/>
+        <xctk:MaterialButton x:Name="multi_delete" HorizontalAlignment="Left" Height="33" Margin="87,5,0,0" VerticalAlignment="Top" Width="38" Click="mul_del" FontSize="22" FontWeight="Bold" Foreground="#FF1A3C42" BorderThickness="0" ToolTip="suppresion multiple">
+            <xctk:MaterialButton.Background>
+                <ImageBrush ImageSource="delete icon.png"/>
+            </xctk:MaterialButton.Background>
+        </xctk:MaterialButton>
+        <xctk:MaterialButton x:Name="materialButton2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="40" Margin="3,3,0,0" Click="retourner_Click" ToolTip="Retourner">
+            <xctk:MaterialButton.Background>
+                <ImageBrush ImageSource="return.png"/>
+            </xctk:MaterialButton.Background>
+        </xctk:MaterialButton>
+        <TextBlock x:Name="info" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="31" Margin="310,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="468" FontSize="20" TextAlignment="Center" Foreground="White" FontWeight="Bold"/>
+
+    </Grid>
+</Page>

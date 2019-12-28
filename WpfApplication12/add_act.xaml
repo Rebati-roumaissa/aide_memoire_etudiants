@@ -1,0 +1,83 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication12"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="WpfApplication12.add_act"
+        mc:Ignorable="d"
+     
+        Title="Activité" Height="445.328" Width="423" Foreground="#FF47AAA6">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="#FF245260"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="0" RenderTransformOrigin="1,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleY="1" ScaleX="1"/>
+                <SkewTransform AngleY="0" AngleX="0"/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform X="4" Y="4"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="403*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="279" Margin="10,100,0,38" Background="White" Visibility="Collapsed" Grid.ColumnSpan="2">
+
+            <StackPanel.Effect>
+                <DropShadowEffect/>
+            </StackPanel.Effect>
+        </StackPanel>
+        <TextBlock x:Name="titre" HorizontalAlignment="Left" Height="46" Margin="0,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" Foreground="#FFFFA424" FontSize="36" TextAlignment="Center"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="13,96,0,0" Height="34" Width="159" Foreground="#FF47AAA6" FontSize="24"><Run Text="D"/><Run Text="ésignation"/></TextBlock>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,152,0,0" RenderTransformOrigin="0.913,2.938" Height="31" Width="103" Foreground="#FF47AAA6" FontSize="24" Text="Type"/>
+
+        <ComboBox x:Name="comboBox_type" HorizontalAlignment="Left" Height="31" Margin="184,150,0,0" VerticalAlignment="Top" Width="198" BorderThickness="0" BorderBrush="{x:Null}" SelectionChanged="comboBox_priorite_SelectionChanged" Background="#FFECEAE8" FontSize="20" FontWeight="Bold" Foreground="#FF0E2E34">
+
+            <ComboBoxItem Content="Scientifique" Height="30" Background="White" FontSize="20" FontStyle="Normal" FontWeight="Bold">
+                <ComboBoxItem.Foreground>
+                    <SolidColorBrush Color="#FF0E2E34"/>
+                </ComboBoxItem.Foreground>
+            </ComboBoxItem>
+            <ComboBoxItem Content="Sportive" Height="32"  FontSize="20" FontStyle="Normal" FontWeight="Bold"/>
+            <ComboBoxItem Content="Autre" Height="35"  FontSize="20" FontStyle="Normal" FontWeight="Bold">
+                <ComboBoxItem.Foreground>
+                    <SolidColorBrush Color="#FF0E2E34"/>
+                </ComboBoxItem.Foreground>
+            </ComboBoxItem>
+
+
+        </ComboBox>
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20,266,0,0" RenderTransformOrigin="0.913,2.938" Height="44" Width="121" Foreground="#FFF1F2F7" FontSize="28" FontWeight="Bold" Text="Tâche"/>
+        <Button x:Name="Valider" Content="Valider" HorizontalAlignment="Left" Margin="255,332,0,0" VerticalAlignment="Top" Width="129" Height="42" FontSize="24" Foreground="#FF0E2E34" Click="Creer_activite_Click" BorderBrush="{x:Null}" BorderThickness="0" RenderTransformOrigin="2.119,0.962" Background="#FFFFA424" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Annuler" Content="Annuler" HorizontalAlignment="Left" Margin="15,332,0,0" VerticalAlignment="Top" Width="129" Height="42" FontSize="24" Foreground="#FF0E2E34" Click="Annuler_Click" BorderBrush="{x:Null}" BorderThickness="0" Background="#FFFFA424" FontWeight="Bold" RenderTransformOrigin="-0.178,0.571">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.8"/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="Designation_activité" HorizontalAlignment="Left" Height="30" Margin="183,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Foreground="Black" FontWeight="Bold" FontSize="18" BorderBrush="{x:Null}" BorderThickness="2"  Background="#FFE4E2E2">
+        </TextBox>
+        <Button x:Name="ajouter_tache" Content="" HorizontalAlignment="Left" Margin="329,271,0,104" Width="37" Click="ajouter_tache_Click" BorderBrush="{x:Null}" RenderTransformOrigin="2,0.455" >
+            <Button.Background>
+                <ImageBrush ImageSource= "add.png" Stretch="Uniform" AlignmentX="Left"  />
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="er" Visibility="collapsed" HorizontalAlignment="Left" Height="35" Margin="40,58,0,0" TextWrapping="Wrap" Text="vous devez insérer la désignation de votre tache" VerticalAlignment="Top" Width="349" FontSize="16" Foreground="#FFD62B1A"/>
+        <TextBlock x:Name="erreur" Visibility="Collapsed" HorizontalAlignment="Left" Height="42" Margin="0,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="412" Grid.ColumnSpan="2" Foreground="#FFF5370D"><Run Text="                         "/><Run Text="Vous ne pouvez pas insérer une date antèrieure "/><Run/><LineBreak/><Run Text="                           "/><Run Text="ou heure"/><Run Text=" de fin"/><Run Text=" "/><Run Text="inferieur a l'heure"/><Run Text=" du debut"/><Run Text=" !"/></TextBlock>
+        <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="185,443,-182,-173" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="error" HorizontalAlignment="Left" Height="23" Margin="96,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" RenderTransformOrigin="0.5,0.5" Text="Veuillez inserer une désignation" Foreground="#FFD81111" FontSize="16" Visibility="Collapsed"/>
+        <TextBlock x:Name="textBlock_stp_type" HorizontalAlignment="Left" Height="21" Margin="131,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="#FFEC1111" Text="Veuillez entrer un type" FontSize="16" Visibility="Collapsed"/>
+        <TextBox x:Name="autre_type" FontWeight="Bold" FontSize="18" Visibility="Collapsed" HorizontalAlignment="Left" Height="30" Margin="184,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FFE4E2E2"/>
+
+    </Grid>
+</Window>

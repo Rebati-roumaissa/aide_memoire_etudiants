@@ -1,0 +1,259 @@
+﻿<Page x:Class="WpfApplication12.planning"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication12"
+      mc:Ignorable="d"    Margin="0" 
+ Height="700" Width="1194"
+      
+
+      Title="Planning" Background="#FF0E2E34"
+       xmlns:WpfScheduler="clr-namespace:WpfScheduler;assembly=WpfScheduler" 
+       xmlns:my="clr-namespace:WpfScheduler;assembly=WpfScheduler">
+
+
+    <Page.Resources>
+        <!--Background-->
+        <SolidColorBrush x:Key="Background" Color="#1C1C1C"/>
+        <SolidColorBrush x:Key="BackgroundButton" Color="#FFFFA424 "/>
+
+        <SolidColorBrush x:Key="LightBackground" Color="#2D2D30"/>
+
+        <!--Foreground-->
+        <SolidColorBrush x:Key="Foreground" Color="#FF0E2E34"/>
+
+        <!--General-->
+        <SolidColorBrush x:Key="BackgroundHighlighted" Color="#54545C"/>
+        <SolidColorBrush x:Key="BorderBrushHighlighted" Color="#6A6A75"/>
+        <SolidColorBrush x:Key="BackgroundSelected" Color="#FFFFA424"/>
+        <SolidColorBrush x:Key="BorderBrushSelected" Color="#1C97EA"/>
+        <SolidColorBrush x:Key="BackgroundNormal" Color="#3F3F46"/>
+        <SolidColorBrush x:Key="BorderBrushNormal" Color="#54545C"/>
+
+        <!--Text Box-->
+        <SolidColorBrush x:Key="TextBoxBackground" Color="#333337"/>
+        <SolidColorBrush x:Key="TextBoxBackgroundSelected" Color="#3F3F46"/>
+
+        <!--Search Text Box-->
+        <SolidColorBrush x:Key="SearchTextForeground" Color="#999999"/>
+
+        <!--Link Button-->
+        <SolidColorBrush x:Key="LinkButtonForeground" Color="#1297FB"/>
+        <SolidColorBrush x:Key="LinkButtonForegroundHighlighted" Color="#55AAFF"/>
+
+        <!--Close Button-->
+        <SolidColorBrush x:Key="CloseButtonBackgroundHighlighted" Color="#39ADFB"/>
+        <SolidColorBrush x:Key="CloseButtonBackgroundPressed" Color="#084E7D"/>
+        <SolidColorBrush x:Key="CloseButtonStroke" Color="#AAFFFFFF"/>
+        <SolidColorBrush x:Key="CloseButtonStrokeHighlighted" Color="#FFFFFF"/>
+
+        <!--Menu-->
+        <SolidColorBrush x:Key="MenuSeparatorBorderBrush" Color="#333337"/>
+        <SolidColorBrush x:Key="MenuItemHighlightedBackground" Color="#3E3E40"/>
+        <SolidColorBrush x:Key="SubmenuItemBackground" Color="#1B1B1C"/>
+        <SolidColorBrush x:Key="SubmenuItemBackgroundHighlighted" Color="#333334"/>
+        <SolidColorBrush x:Key="MenuDisabledForeground" Color="#656565"/>
+
+        <!--Scroll Bar-->
+        <SolidColorBrush x:Key="ScrollBarPageButtonBackgroundHighlighted" Color="#05FFFFFF"/>
+
+
+        <Style x:Key="StandardButton" TargetType="Button">
+            <Setter Property="Visibility" Value="Visible"/>
+            <Setter Property="Foreground" Value="{StaticResource Foreground}"/>
+            <Setter Property="Background" Value="{StaticResource BackgroundButton}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrushNormal}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border SnapsToDevicePixels="True"
+				            BorderThickness="1"
+				            BorderBrush="{TemplateBinding BorderBrush}" 
+				            Background="{TemplateBinding Background}">
+                            <Grid SnapsToDevicePixels="True">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="{StaticResource BorderBrushHighlighted}" />
+                                <Setter Property="Background" Value="#FF0E2E34" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="{StaticResource BackgroundSelected}"/>
+                                <Setter Property="BorderBrush" Value="{StaticResource BorderBrushSelected}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value=".5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="LinkButton" TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Foreground" Value="{StaticResource LinkButtonForeground}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <TextBlock><ContentPresenter/></TextBlock>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Foreground" Value="{StaticResource LinkButtonForegroundHighlighted}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type TabControl}" x:Key="StandardTabControl">
+            <Style.Resources>
+                <Style TargetType="{x:Type TabItem}">
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TabItem}">
+                                <Grid Background="{TemplateBinding Background}" SnapsToDevicePixels="true" Height="23">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="25"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ContentPresenter ContentSource="Header" Margin="10,0,10,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <ContentPresenter.Resources>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="Foreground" Value="{StaticResource Foreground}"/>
+                                            </Style>
+                                        </ContentPresenter.Resources>
+                                    </ContentPresenter>
+
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="false">
+                                        <Setter Property="Background" Value="white"/>
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="true">
+                                        <Setter Property="Background" Value="{StaticResource BorderBrushSelected}"/>
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="true">
+                                        <Setter Property="Background" Value="{StaticResource BackgroundSelected}"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Style.Resources>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabControl}">
+                        <Grid KeyboardNavigation.TabNavigation="Local">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border Background="Transparent" BorderThickness="0,0,0,3" 
+                            BorderBrush="{StaticResource BackgroundSelected}">
+                                <TabPanel x:Name="HeaderPanel" Panel.ZIndex="1" Margin="0,0,4,-1" 
+                                IsItemsHost="True" KeyboardNavigation.TabIndex="1"/>
+                            </Border>
+                            <Border Grid.Row="1" Background="{StaticResource Background}"/>
+                            <ContentPresenter Grid.Row="1" x:Name="PART_SelectedContentHost" 
+                            ContentSource="SelectedContent"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Page.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="943*"/>
+            <ColumnDefinition Width="121*"/>
+        </Grid.ColumnDefinitions>
+
+        <TabControl  Style="{StaticResource StandardTabControl}" ScrollViewer.CanContentScroll="True" Margin="0" Background="#FF686868" Grid.ColumnSpan="3">
+            <TabItem Header="Par Jour" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="200" FontWeight="Bold">
+                <Grid Background="#FF0E2E34" Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="99*"/>
+                        <ColumnDefinition Width="380*"/>
+                        <ColumnDefinition Width="598*"/>
+                        <ColumnDefinition Width="118*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <my:Scheduler Margin="24,24,42,53" 
+                        HorizontalAlignment="Stretch" x:Name="PlanningJour" VerticalAlignment="Stretch" Loaded="scheduler1_Loaded"
+                        OnEventDoubleClick="Planjour_OnEventDoubleClick"
+                        OnScheduleDoubleClick="scheduler1_OnScheduleDoubleClick"
+                        Mode="Day"  Background="White" Grid.ColumnSpan="4">
+                    </my:Scheduler>
+                    <Button Grid.Column="0" Style="{StaticResource StandardButton}" BorderThickness="0" Click="PrevDay"  Margin="24,22,0,600" >
+                        <Image Source="Left.png"></Image>
+                    </Button>
+                    <Button  Grid.Column="3" Style="{StaticResource StandardButton}" BorderThickness="0" Click="NextDay"  Margin="0,22,42,600"  >
+                        <Image Source="Right.png"></Image>
+                    </Button>
+                    <Label x:Name="label" Content="             Jour Suivant" HorizontalAlignment="Center" Height="36" Margin="427.5,27,116,0" VerticalAlignment="Top" Width="172" FontWeight="Bold" FontSize="16" Foreground="Black" Background="{x:Null}" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label_Copy" Content="  Jour Précédent" HorizontalAlignment="Center" Height="36" Margin="1,27,206.5,0" VerticalAlignment="Top" Width="172" FontWeight="Bold" FontSize="16" Foreground="Black" Background="{x:Null}" Grid.Column="1"/>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Par Semaine" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="200" FontWeight="Bold">
+                <Grid Background="#FF103A41" Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="349*"/>
+                        <ColumnDefinition Width="36*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <my:Scheduler Margin="24,60,46,51"
+                        HorizontalAlignment="Stretch" x:Name="PlanningSemaine" VerticalAlignment="Stretch" Loaded="scheduler2_Loaded"
+         
+                        OnEventDoubleClick="PlanSemaine_OnEventDoubleClick"
+                        OnScheduleDoubleClick="scheduler1_OnScheduleDoubleClick"
+                        Mode="Week" Background="White" Grid.ColumnSpan="3"/>
+                    <Button Style="{StaticResource StandardButton}" BorderThickness="0" Click="PrevWeek"  Margin="24,16,0,606" Grid.Column="0">
+                        <Image Source="Left.png"/>
+                    </Button>
+                    <Button Style="{StaticResource StandardButton}" BorderThickness="0" Click="NextWeek"  Margin="972,14,44,608" Grid.Column="1" Grid.ColumnSpan="2" >
+                        <Image Source="right.png"/>
+                    </Button>
+                    <Label x:Name="label_Copy1" Content="       Semaine Suivante" HorizontalAlignment="Center" Height="34" Margin="780,21,32,0" VerticalAlignment="Top" Width="180" FontWeight="Bold" FontSize="16" Foreground="#FFF5AF4C" Background="{x:Null}" Grid.Column="1"/>
+                    <Label x:Name="label_Copy2" Content="   Semaine Précédente" HorizontalAlignment="Center" Height="36" Margin="10,23,794,0" VerticalAlignment="Top" Width="188" FontWeight="Bold" FontSize="16" Foreground="#FFF5AF4C" Background="{x:Null}" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Par mois " HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="200" FontWeight="Bold">
+                <Grid Background="#FF103A41" Margin="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="133*"/>
+                        <ColumnDefinition Width="904*"/>
+                        <ColumnDefinition Width="135*"/>
+                    </Grid.ColumnDefinitions>
+                    <my:Scheduler Margin="38,73,64,45"
+                        HorizontalAlignment="Stretch" x:Name="PlanningMonth" VerticalAlignment="Stretch" Loaded="scheduler3_Loaded"
+         
+                        OnEventDoubleClick="PlanMois_OnEventDoubleClick"
+                        OnScheduleDoubleClick="scheduler1_OnScheduleDoubleClick"
+                        Mode="Month"  Background="#FFFBFBFB" Grid.ColumnSpan="3"/>
+                    <Button Style="{StaticResource StandardButton}" BorderThickness="0" Click="PrevMonth"  Margin="57,20,3,595" Grid.Column="0">
+                        <Image Source="Left.png"/>
+                    </Button>
+                    <Button Style="{StaticResource StandardButton}" BorderThickness="0" Click="NextMonth"  Margin="893,20,86,595" Grid.Column="1" Grid.ColumnSpan="2" >
+                        <Image Source="right.png"/>
+                    </Button>
+                    <Label x:Name="label_Copy3" Content="      Mois Suivant" HorizontalAlignment="Center" Height="36" Margin="715,27,11,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="16" Foreground="White" Background="{x:Null}" Grid.Column="1"/>
+                    <Label x:Name="label_Copy4" Content="   Mois Précédent" HorizontalAlignment="Center" Height="40" Margin="5,28,713,0" VerticalAlignment="Top" Width="186" FontWeight="Bold" FontSize="16" Foreground="White" Background="{x:Null}" Grid.Column="1"/>
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Page>

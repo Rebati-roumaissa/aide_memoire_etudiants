@@ -1,0 +1,297 @@
+E:\c#\WpfApplication12\WpfApplication12\bin\Debug\WpfApplication12.exe.config
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\MainWindow.g.cs
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\App.g.cs
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.cache
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.lref
+E:\c#\WpfApplication12\WpfApplication12\bin\Debug\WpfApplication12.exe
+E:\c#\WpfApplication12\WpfApplication12\bin\Debug\WpfApplication12.pdb
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\MainWindow.baml
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12.g.resources
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12.Properties.Resources.resources
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12.csproj.GenerateResource.Cache
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12.exe
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12.pdb
+E:\c#\WpfApplication12\WpfApplication12\obj\Debug\WpfApplication12.csprojResolveAssemblyReference.cache
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12.exe
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12.pdb
+E:\c#\login\WpfApplication12\bin\Debug\WpfApplication12.exe
+E:\c#\login\WpfApplication12\bin\Debug\WpfApplication12.pdb
+E:\c#\login\WpfApplication12\obj\Debug\App.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.cache
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.lref
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12.g.resources
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12.Properties.Resources.resources
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12.csproj.GenerateResource.Cache
+E:\c#\login\WpfApplication12\obj\Debug\inscrire.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12_Content.g.cs
+E:\c#\login\WpfApplication12\bin\Debug\bdd.mdf
+E:\c#\login\WpfApplication12\bin\Debug\bdd_log.ldf
+E:\c#\login\WpfApplication12\obj\Debug\inscrire.baml
+E:\c#\login\WpfApplication12\obj\Debug\MainWindow.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\MainWindow.baml
+E:\c#\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\c#\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.xml
+E:\c#\login\WpfApplication12\obj\Debug\acceuil.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\acceuil.baml
+E:\c#\login\WpfApplication12\obj\Debug\carnet_adr.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\carnet_adr.baml
+E:\c#\login\WpfApplication12\obj\Debug\add_contact.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\add_contact.baml
+E:\c#\login\WpfApplication12\obj\Debug\modify_contact.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\modify_contact.baml
+E:\c#\login\WpfApplication12\obj\Debug\Etat_tache.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\Etat_tache.baml
+E:\c#\login\WpfApplication12\obj\Debug\activ.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\add_act.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\add_tache.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\Alerte.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\activ.baml
+E:\c#\login\WpfApplication12\obj\Debug\add_act.baml
+E:\c#\login\WpfApplication12\obj\Debug\add_tache.baml
+E:\c#\login\WpfApplication12\obj\Debug\Alerte.baml
+E:\c#\login\WpfApplication12\obj\Debug\WpfApplication12.csprojResolveAssemblyReference.cache
+E:\c#\login\WpfApplication12\obj\Debug\list_taches.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\modif_tache.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\list_taches.baml
+E:\c#\login\WpfApplication12\obj\Debug\modif_tache.baml
+E:\c#\login\WpfApplication12\bin\Debug\WpfScheduler.pdb
+E:\c#\login\WpfApplication12\obj\Debug\planning.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\planning.baml
+E:\c#\login\WpfApplication12\obj\Debug\Affi_Event.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\Affi_Tach.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\Affi_Event.baml
+E:\c#\login\WpfApplication12\obj\Debug\Affi_Tach.baml
+E:\c#\login\WpfApplication12\obj\Debug\AddEvent.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\evenement.g.cs
+E:\c#\login\WpfApplication12\obj\Debug\AddEvent.baml
+E:\c#\login\WpfApplication12\obj\Debug\evenement.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.exe
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.pdb
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.csprojResolveAssemblyReference.cache
+E:\login (1)\login\WpfApplication12\obj\Debug\acceuil.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\activ.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\AddEvent.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\add_act.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\add_contact.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\add_tache.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\Affi_Event.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\Affi_Tach.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\Alerte.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\carnet_adr.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\Etat_tache.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\evenement.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\list_taches.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\MainWindow.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\inscrire.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\modify_contact.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\modif_tache.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\planning.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\App.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.cache
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.lref
+E:\login (1)\login\WpfApplication12\bin\Debug\WpfApplication12.exe
+E:\login (1)\login\WpfApplication12\bin\Debug\WpfApplication12.pdb
+E:\login (1)\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\login (1)\login\WpfApplication12\bin\Debug\WpfScheduler.pdb
+E:\login (1)\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.xml
+E:\login (1)\login\WpfApplication12\obj\Debug\acceuil.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\activ.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\AddEvent.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\add_act.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\add_contact.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\add_tache.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\Affi_Event.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\Affi_Tach.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\Alerte.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\carnet_adr.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\Etat_tache.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\evenement.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\list_taches.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\MainWindow.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\inscrire.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\modify_contact.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\modif_tache.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\planning.baml
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.g.resources
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.Properties.Resources.resources
+E:\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.csproj.GenerateResource.Cache
+E:\login (1)\login\WpfApplication12\obj\Debug\Window1.g.cs
+E:\login (1)\login\WpfApplication12\obj\Debug\Window1.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.exe
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.pdb
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\WpfApplication12.exe
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\WpfApplication12.pdb
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\WpfScheduler.pdb
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.xml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.csprojResolveAssemblyReference.cache
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\acceuil.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\activ.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\AddEvent.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_act.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_contact.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_tache.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Event.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Tach.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Alerte.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\carnet_adr.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Etat_tache.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\evenement.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\list_taches.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\MainWindow.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\inscrire.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modify_contact.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modif_tache.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\planning.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Window1.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\App.g.cs
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.cache
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.lref
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\acceuil.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\activ.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\AddEvent.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_act.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_contact.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_tache.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Event.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Tach.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Alerte.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\carnet_adr.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Etat_tache.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\evenement.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\list_taches.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\MainWindow.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\inscrire.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modify_contact.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modif_tache.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\planning.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Window1.baml
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.g.resources
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.Properties.Resources.resources
+E:\login(1) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.csproj.GenerateResource.Cache
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.exe
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.pdb
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\WpfApplication12.exe
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\WpfApplication12.pdb
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\WpfScheduler.pdb
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.xml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.csprojResolveAssemblyReference.cache
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\acceuil.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\activ.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\AddEvent.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_act.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_contact.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_tache.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Event.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Tach.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Alerte.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\carnet_adr.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Etat_tache.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\evenement.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\list_taches.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\MainWindow.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\inscrire.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modify_contact.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modif_tache.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\planning.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Window1.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\App.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.cache
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.lref
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\acceuil.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\activ.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\AddEvent.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_act.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_contact.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_tache.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Event.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Affi_Tach.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Alerte.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\carnet_adr.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Etat_tache.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\evenement.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\list_taches.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\MainWindow.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\inscrire.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modify_contact.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\modif_tache.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\planning.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\Window1.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.g.resources
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.Properties.Resources.resources
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\WpfApplication12.csproj.GenerateResource.Cache
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\document_page.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\document_page.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_doc.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\add_doc.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\docs_tache_events.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\docs_tache_events.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\bin\Debug\WpfApplication12.exe.config
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\User_Affichage.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\User_Affichage.baml
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\a_propos.g.cs
+C:\Users\FEDOUA\Desktop\login(2) version roumaissa\login (1)\login\WpfApplication12\obj\Debug\a_propos.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\bin\Debug\WpfApplication12.exe.config
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12.exe
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12.pdb
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\bin\Debug\WpfApplication12.exe
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\bin\Debug\WpfApplication12.pdb
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\bin\Debug\WpfScheduler.pdb
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\bin\Debug\Xceed.Wpf.Toolkit.xml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12.csprojResolveAssemblyReference.cache
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\docs_tache_events.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\acceuil.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\activ.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\AddEvent.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_act.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_contact.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_doc.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_tache.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Affi_Event.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Affi_Tach.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Alerte.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\a_propos.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\carnet_adr.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\docs_tache_events.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\document_page.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Etat_tache.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\evenement.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\list_taches.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\MainWindow.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\inscrire.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\modify_contact.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\modif_tache.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\planning.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\User_Affichage.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Window1.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\App.g.cs
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.cache
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12_MarkupCompile.lref
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\acceuil.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\activ.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\AddEvent.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_act.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_contact.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_doc.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\add_tache.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Affi_Event.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Affi_Tach.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Alerte.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\a_propos.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\carnet_adr.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\document_page.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Etat_tache.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\evenement.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\list_taches.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\MainWindow.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\inscrire.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\modify_contact.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\modif_tache.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\planning.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\User_Affichage.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\Window1.baml
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12.g.resources
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12.Properties.Resources.resources
+C:\Users\MAISON XP\Desktop\ticktask\ticktask\WpfApplication12\obj\Debug\WpfApplication12.csproj.GenerateResource.Cache

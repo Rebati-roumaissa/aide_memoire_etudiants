@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication12.a_propos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication12"
+        mc:Ignorable="d"
+        Title="a_propos" Height="420" Width="550">
+    <Grid Background="#FF1A3C42">
+        <StackPanel HorizontalAlignment="Left" Height="341" Margin="30,23,0,0" VerticalAlignment="Top" Width="486" Background="White">
+            <StackPanel.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5"/>
+            </StackPanel.Effect>
+            <StackPanel HorizontalAlignment="Left" Height="51" Margin="194,50,0,0" Width="83">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="logo.png"/>
+                </StackPanel.Background>
+            </StackPanel>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="173" TextWrapping="Wrap" Width="451" Margin="16,30,0,0" Foreground="#FF0E2E34" FontSize="14" TextAlignment="Center" FontWeight="Bold"><Run Text="TickTask est une application "/><Run Text="d"/><Run Text="esktop de gestion de temps  disposant de plusieurs fonctionnalités pour faciliter la vie estudiantine et d'accompagner  l'etudiant dans ses pas vers la réussite en lui offrant les outils nécessaires pour une meilleure organisation du temps ."/><LineBreak/><Run Text="Elle a été créée en 2017 dans le cadre d'un projet pluridisciplinaire de l'école supérieure d'informatique et développé"/><Run Text="e"/><Run Text=" par : "/><Run Text="Reb"/><Run Text="a"/><Run Text="ti Roumaissa ,Bouzenoun Fedoua , Ouali Assia , Khettache Nour el houda , Bahri Somia "/><Run Text="et "/><Run Text="G"/><Run Text="hemit Fatimazohra"/><Run Text="."/><LineBreak/><Run FontFamily="Helvetica" Text="Encadré par "/><Run FontFamily="Helvetica" Text=":"/><Run FontFamily="Helvetica" Text=" Mme Atek "/><Run FontFamily="Helvetica" Text="et "/><Run FontFamily="Helvetica" Text="Mme Bourai"/><Run FontFamily="Helvetica" Text="."/></TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Window>

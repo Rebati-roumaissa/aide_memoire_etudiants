@@ -1,0 +1,77 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication12"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="WpfApplication12.activ"
+      mc:Ignorable="d"
+      Title="activ" Width="1194" Height="805.97">
+
+    <Page.Resources>
+        <Style x:Key="ListStyle" TargetType="{x:Type ListBoxItem}">
+            <EventSetter Event="Control.MouseDoubleClick" Handler="HandleDoubleClick" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                        <Border x:Name="_Border"
+                                Padding="2"
+                                SnapsToDevicePixels="true">
+                            <ContentPresenter />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter TargetName="_Border" Property="Background" Value="#d3eef5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid Margin="-5,0,6,7" Background="#7a9d96">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="560*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="299*"/>
+            <RowDefinition Height="242*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="81" Margin="1,47,0,0" VerticalAlignment="Top" Width="1173" Background="White" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <CheckBox x:Name="checkBox" Margin="10,13,0,52" Width="14" RenderTransformOrigin="0.571,0.952" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Margin="8,7,0,48" Foreground="#FF0E2E34" FontSize="18" Width="160"><Run Text="Sé"/><Run Text="l"/><Run Text="é"/><Run Text="ctionner tout "/></TextBlock>
+        </StackPanel>
+        <ListBox x:Name="listBox"  ItemContainerStyle="{DynamicResource ListStyle}" Height="608" Margin="1,98,15,0" VerticalAlignment="Top" Grid.RowSpan="2" RenderTransformOrigin="0.504,0.555" FontSize="18" BorderBrush="{x:Null}" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="34" Margin="428,7,0,0" VerticalAlignment="Top" Width="137" SelectionChanged="comboBox_SelectionChanged" Background="#FFFFA424" Foreground="#FF0E2E34" FontSize="20" SelectedIndex="0" Grid.Column="1">
+            <ComboBox.Effect>
+                <DropShadowEffect BlurRadius="3" ShadowDepth="3" Direction="300" Opacity="0.3"/>
+            </ComboBox.Effect>
+            <ComboBoxItem Content=" Désignation" HorizontalAlignment="Left" Width="127"/>
+            <ComboBoxItem Content=" Type" HorizontalAlignment="Left" Width="127"/>
+        </ComboBox>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="32" Margin="272,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Foreground="#FF0E2E34" FontSize="20" FontWeight="Bold" Grid.Column="1"><Run Text="Rechercher par"/><Run Text=" "/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="32" Margin="572,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" TextChanged="textBox_TextChanged" BorderBrush="#FF707070" Foreground="#FF0E2E34" FontSize="20" Grid.Column="1">
+            <TextBox.Effect>
+                <DropShadowEffect BlurRadius="3" ShadowDepth="3" Opacity="0.3"/>
+            </TextBox.Effect>
+        </TextBox>
+
+        <xctk:MaterialButton x:Name="materialButton1" HorizontalAlignment="Left" Height="42" Margin="5,1,0,0" VerticalAlignment="Top" Width="45" Click="add_Click" ToolTip="ajouter une nouvelle activité">
+            <xctk:MaterialButton.Background>
+                <ImageBrush ImageSource="add_p.png"/>
+            </xctk:MaterialButton.Background>
+        </xctk:MaterialButton>
+        <xctk:MaterialButton x:Name="materialButton2" HorizontalAlignment="Left" Height="37" Margin="54,3,0,0" VerticalAlignment="Top" Width="41" Click="mul_del" ToolTip="supression multiple">
+            <xctk:MaterialButton.Background>
+                <ImageBrush ImageSource="delete icon.png"/>
+            </xctk:MaterialButton.Background>
+        </xctk:MaterialButton>
+        <xctk:MaterialButton x:Name="materialButton3" Height="41" Margin="750,2,32,0" VerticalAlignment="Top" RenderTransformOrigin="0.614,-0.361" Grid.Column="1" Click="research_Click" ToolTip="rechercher">
+            <xctk:MaterialButton.Background>
+                <ImageBrush ImageSource="search.png"/>
+            </xctk:MaterialButton.Background>
+        </xctk:MaterialButton>
+
+    </Grid>
+</Page>
